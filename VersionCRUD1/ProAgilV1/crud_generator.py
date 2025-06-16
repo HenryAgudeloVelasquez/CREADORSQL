@@ -113,7 +113,7 @@ BEGIN
     SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
 
 BEGIN
-    UPDATE  {nombre_tabla} SET Estado = 0 WHERE id = @id
+    UPDATE  {nombre_tabla} SET Estado = 0, FechaModifica = GETDATE() WHERE id = @id
 END
 END
     """

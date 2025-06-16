@@ -133,7 +133,7 @@ def crear_crud_sql():
                 else:
                     columnas.append(f"{col_name} {col_type}")
 
-        contenido_tabla = f"CREATE TABLE {nombre_tabla} (\n    Id INT PRIMARY KEY,\n    {',\n    '.join(columnas)}\n);"
+        contenido_tabla = f"CREATE TABLE {nombre_tabla} (\n    Id BIGINT PRIMARY KEY,\n  IdUsuario BIGINT,\n  IdUsuarioModifica BIGINT,\n  FechaModifica datetime,\n  FechaRegistro datetime,\n  Estado bit,\n  IdActividad BIGINT,\n  IdProyecto BIGINT,\n    {',\n    '.join(columnas)}\n);"
         tabla_text.delete("1.0", tk.END)
         tabla_text.insert(tk.END, contenido_tabla)
 
