@@ -334,6 +334,7 @@ namespace {alias}.Services
 
 
                 dynamic resultado = await connection.ExecuteScalarAsync("dbo.{nombre_sp_add}", parameters, commandType: CommandType.StoredProcedure);
+                model.Id = parameters.Get<long>("@Id");
                 _responseService.EstablecerRespuesta(true, model);
             }}
             catch (Exception ex)

@@ -201,32 +201,32 @@ def crear_crud_sql():
     columnas_longitudes = []  # Lista para almacenar las longitudes de las columnas
     botones_eliminar = []
     tipos_datos = [
-        "INT",  # Números enteros
+        #"INT",  # Números enteros
         "VARCHAR",  # Cadenas de caracteres de longitud variable
-        "TEXT",  # Texto de longitud variable, más grande que VARCHAR
-        "DATE",  # Fecha (año, mes, día)
+        #"TEXT",  # Texto de longitud variable, más grande que VARCHAR
+        #"DATE",  # Fecha (año, mes, día)
         "FLOAT",  # Números de punto flotante con precisión simple
         "DECIMAL",  # Números decimales con precisión definida por el usuario
         "BOOL",  # Booleano (verdadero o falso)
         "DATETIME",  # Fecha y hora
-        "TINYINT",  # Enteros pequeños (0 a 255)
-        "SMALLINT",  # Enteros de tamaño mediano
+        #"TINYINT",  # Enteros pequeños (0 a 255)
+        #"SMALLINT",  # Enteros de tamaño mediano
         "BIGINT",  # Enteros grandes
         "NUMERIC",  # Similar a DECIMAL, pero con mayor precisión
         "MONEY",  # Valores monetarios
-        "SMALLMONEY",  # Valores monetarios más pequeños
+        #"SMALLMONEY",  # Valores monetarios más pequeños
         "BIT",  # Un solo bit (0 o 1)
-        "NVARCHAR",  # Cadenas de caracteres Unicode de longitud variable
-        "NTEXT",  # Texto Unicode de longitud variable
-        "BINARY",  # Datos binarios de longitud fija
-        "VARBINARY",  # Datos binarios de longitud variable
-        "IMAGE",  # Datos binarios grandes (imágenes, documentos, etc.)
-        "TIMESTAMP",  # Marca de tiempo que se actualiza automáticamente
+        #"NVARCHAR",  # Cadenas de caracteres Unicode de longitud variable
+        #"NTEXT",  # Texto Unicode de longitud variable
+        #"BINARY",  # Datos binarios de longitud fija
+        #"VARBINARY",  # Datos binarios de longitud variable
+        #"IMAGE",  # Datos binarios grandes (imágenes, documentos, etc.)
+        #"TIMESTAMP",  # Marca de tiempo que se actualiza automáticamente
         "UNIQUEIDENTIFIER",  # Identificador único global (GUID)
-        "XML",  # Datos XML
-        "CURSOR",  # Referencia a un cursor
-        "SQL_VARIANT",  # Puede almacenar diferentes tipos de datos
-        "TABLE",  # Tipo especial para almacenar conjuntos de resultados
+        #"XML",  # Datos XML
+        #"CURSOR",  # Referencia a un cursor
+        #"SQL_VARIANT",  # Puede almacenar diferentes tipos de datos
+        #"TABLE",  # Tipo especial para almacenar conjuntos de resultados
     ]  # Actualizar tipos de datos
 
     tk.Button(ventana, text="Agregar columna", command=agregar_columna).grid(row=14, column=1, padx=5, pady=5)  # Cambiar la fila a 14
